@@ -1,0 +1,73 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1° parte */
+.secao-topo {
+    background-image: url(assets/capa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    text-align: center;
+    padding: 50px;
+}
+
+h1,
+h2 {
+    color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    background-color: #000;
+}
+
+h2 {
+    background-color: #f00;
+}
+
+img {
+    height: 20em;
+}
+
+/* 2° parte */
+.secao-conteudo {
+    width: 800px;
+    margin: 50px auto;
+}
+
+h3 {
+    margin: 60px auto 20px;
+}
+
+.secao-conteudo p {
+    line-height: 20px;
+}
+
+/* 3° parte */
+.secao-divulgacao {
+    background-image: url(assets/img1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+    text-align: center;
+    padding: 50px;
+}
+
+/* 4° parte */
+.secao-conteudo p {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+span {
+    color: #fff;
+    background-color: #f00;
+    padding: 10px 30px;
+    font-weight: bold;
+}
