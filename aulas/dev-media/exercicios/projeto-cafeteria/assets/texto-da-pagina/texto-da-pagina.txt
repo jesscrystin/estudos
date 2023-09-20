@@ -1,0 +1,139 @@
+TÍTULO DA PÁGINA
+Manhattan - Coffee House
+
+links:
+INFORMAÇÕES	
+CONTATOS
+HORÁRIOS
+
+------------- SEÇÃO BANNER (PARALLAX) --------------------
+
+Título do Banner:
+MANHATTAN - COFFEE HOUSE
+
+------------------------- SEÇÃO INFORMAÇÕES ----------------------------
+
+1° CONTAINER COM TEXTO:
+
+Subtítulo (2° nível):
+EXPERIMENTE O MELHOR CAFÉ DA CIDADE!
+
+Parágrafo:
+O café não é uma simples bebida que foi preparada por alguém. O café é
+momento e nós mostraremos isso. Frases como “Que tal tomarmos um café?”
+ou até então “Vamos fazer um café?” são demonstrações de que um dos
+momentos que mais reforçam os laços para com o próximo está finalmente
+por acontecer. Fraco ou forte? Com ou sem açúcar? Você deseja açúcar ou
+adoçante? Estas são frases que ouvimos em vários lugares. Em quase todos
+os locais onde há pessoas há também café. Parecemos intrínsecos ao café.
+Aqui na Manhattan serviremos para você com muito carinho o nosso querido
+e amado Amaro’s Coffe diretamente do nosso cafezal em Minas Gerais. Para
+todos nós, café é coisa séria e merece todo o cuidado.
+
+
+* CONTAINER COM SEGUNDA IMAGEM DE FUNDO (PARALLAX):
+
+Subtítulo (3° nível):
+Um bom café é motivo de alegria!
+
+
+2° CONTAINER COM TEXTO:
+
+Subtítulo (2° nível):
+O QUE É O CAFÉ MANHATTAN?
+
+Parágrafo:
+Segundo a Metodologia de Avaliação Sensorial da SCA (Specialty Coffee
+Association), usada no mundo todo, um café especial é todo aquele que
+atinge, no mínimo, 80 pontos na escala de pontuação da metodologia (que
+vai até 100). O Café Manhattan destaca-se nos atributos fragrância,
+corpo, harmonia, doçura e sabor, nesse caso, possuindo sabores e aromas
+que podem ser frutados, herbais, doces como caramelo e chocolate.
+Podemos fazer uma analogia com o vinho, pois o café Manhattan também
+pode ser apreciado por suas características sensoriais e não apenas pela
+cafeína. Através do excelente padrão de cultivo, cuidado pós-colheita e
+da torra, você poderá experimentar diferentes e deliciosos tipos de
+café.
+
+
+* CONTAINER COM TERCEIRA IMAGEM DE FUNDO (PARALLAX):
+
+Subtítulo (3° nível):
+A vida só começa depois do café!
+
+
+3° CONTAINER COM TEXTO:
+
+Subtítulo (2° nível):
+CONHEÇA O CAFÉ GOURMET MANHATTAN?
+
+Parágrafo:
+As características desse tipo do café gourmet da Manhattan são muito
+marcantes. O seu corpo vai depender da variedade do blend: quanto mais
+“pesado” ele for na boca, maior o corpo. Quanto menor a sua pesagem,
+menor o corpo. O nosso café gourmet é o mais bem avaliado no processo de
+produção, para que ele não venha com nenhum tipo de defeito. O aroma é
+bem perceptível e o consumidor consegue sentir nitidamente, sendo que
+ele pode variar entre 4 aromas: florado, cítrico, achocolatado, frutado.
+Essas variações são consequências dos grãos do tipo Arábica. Tudo isso
+vai depender da torra, quanto mais clara ela for, maior será a acidez.
+
+
+------------------------- SEÇÃO CONTATOS ----------------------------
+
+Subtítulo (2° nível) da Seção:
+Contatos & Endereço
+
+Box-contatos:
+1° parágrafo -> Telefone & Whatsapp: (21) 99999-5555
+2° parágrafo -> E-mail: contato@manhattan.com.br
+3° parágrafo -> Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro
+
+
+-------------------------- SEÇÃO HORÁRIOS ----------------------------
+
+Subtítulo (2° nível) da Seção:
+HORÁRIOS DE FUNCIONAMENTO
+
+
+LISTA DA SEÇÃO:
+
+1° Item da lista:
+Subtítulo (3° nível) -> SEGUNDA
+Span -> FECHADO
+
+2° Item da lista:
+Subtítulo (3° nível) -> TERÇA
+Parágrafo -> 09:00 - 22:00
+
+3° Item da lista:
+Subtítulo (3° nível) -> QUARTA
+Parágrafo -> 09:00 - 22:00
+
+4° Item da lista:
+Subtítulo (3° nível) -> QUINTA
+Parágrafo -> 09:00 - 22:00
+
+5° Item da lista:
+Subtítulo (3° nível) -> SEXTA
+Parágrafo -> 09:00 - 22:00
+
+6° Item da lista:
+Subtítulo (3° nível) -> SÁBADO
+Parágrafo -> 09:00 - 22:00
+
+7° Item da lista:
+Subtítulo (3° nível) -> DOMINGO
+Parágrafo -> 12:00 - 22:00
+
+
+------------------------------ RODAPÉ ----------------------------
+
+1° Parágrafo -> &copy; Manhattan - Coffee House - Todos os direitos reservados
+2° Parágrafo -> Desenvolvido por "nome do aluno"
+
+
+
+
+
+

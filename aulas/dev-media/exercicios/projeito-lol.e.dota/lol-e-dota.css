@@ -1,0 +1,48 @@
+body {
+    background: #3f1980;
+    font-size: 20px;
+    font-weight: 500;
+    color: #05f8f9;
+}
+
+.global {
+    font-family: 'Nunito';
+    letter-spacing: -0.2mm;
+    margin: 50px auto;
+    width: 600px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #05f8f9;
+    font-size: 14mm;
+    font-weight: 1000;
+    background-color: #280047;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+img {
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+}
+
+a {
+    color: #05f8f9;
+    text-decoration: none;
+    background-color: #ff00a1;
+    margin-left: 5px;
+}
+
+.destaque {
+    background-color: #ff00a1;
+}
+
+.confira {
+    font-style: italic;
+    font-weight: normal;
+}

@@ -1,0 +1,87 @@
+<!-- 
+    O detetive Roy, investigando os arquivos de um hacker, encontrou o seguinte programa:
+
+    Sabemos que o código calcula a média de três números. Mas o que eles significam?
+
+    Dias depois, o hacker, que era na verdade um hacker do bem, virou amigo de Roy e durante uma conversa o assunto do código veio à tona. Curioso, Roy perguntou ao hacker o que aqueles números significavam e o hacker disse: ah, o programa calcula a média das idades das minhas filhas. Linda tem 12 anos, Guaraciara tem 15 e Pérola tem 13! Roy ficou decepcionado com a resposta, pois achou que era algo mais complicado.
+
+    Se você pudesse voltar no tempo e reescrever o programa para que o próprio detetive Roy conseguisse entendê-lo , como você o reescreveria?
+
+    DICA: faça uso de variáveis para deixar seu código mais claro.
+
+    Com base nisso, escolha a alternativa correta: -->
+
+<meta charset="UTF-8">
+<script>
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+
+    var media = (idadeLinda + idadeGuaraciara + idadePerola) / 3;
+    document.write(Math.round(media) + '<br>');
+</script>
+
+<!-- ________________________________________________________________________________
+ -->
+
+<!-- 
+    Roy, depois de ter muito contato com a programação, acabou se tornando programador.
+
+    O seguinte código o fez refletir bastante:
+
+    Ele percebeu que poderia evitar o uso dos parênteses na instrução que imprime a média das idades se guardasse antes, em uma variável, a soma das idades.
+
+    Altere o programa e aplique a ideia de Roy! Para isso, use a variável totalIdades. Como vai ficar esse código? Assinale a alternativa correta: -->
+<script>
+
+
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+
+    var totalIdades = idadeLinda + idadeGuaraciara + idadePerola;
+    document.write(totalIdades / 3);
+    document.write('<br>')
+</script>
+
+<!-- ________________________________________________________________________________
+-->
+
+<!-- 
+    Simone, em um primeiro teste de programação realizou a seguinte operação:
+    
+    O resultado impresso na tela foi Resultado: 3.3333333333333335!
+    
+    Qual das opções abaixo exibe o código de Simone corretamente alterado - fazendo uso da instrução Math.round - para arredondar o resultado exibindo-o na tela?
+-->
+
+<script>
+    document.write("Resultado: " + Math.round(10 / 3));
+    document.write('<br>')
+</script>
+
+<!-- ________________________________________________________________________________
+ -->
+
+<!--     Temos o seguinte código criado por Gerônimo:
+
+    Temos as seguintes afirmações sobre o código:
+
+        A) Ao rodar o programa o resultado da média das idades é 14.
+
+        B) As variáveis foram declaradas em letras maiúsculas e, em JavaScript, isso causará um erro.
+
+        C) O valor de IDADE2 nos causará problemas no cálculo da média das idades. -->
+
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write((IDADE1 + IDADE2 + IDADE3) / 3);
+</script>
+
+<!-- ________________________________________________________________________________
+ -->
+

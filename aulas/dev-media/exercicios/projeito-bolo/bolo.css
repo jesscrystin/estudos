@@ -1,0 +1,54 @@
+html {
+    font-family: Nunito;
+    letter-spacing: -0.3px;
+}
+
+body {
+    background-color: rgba(235, 185, 161, 255);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #fafafa;
+    background-color: rgba(183, 81, 75, 255);
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredientes {
+    font-weight: normal;
+    line-height: 170%;
+    letter-spacing: -0.5x;
+}
+
+.como-fazer {
+    font-weight: normal;
+    line-height: 250%;
+    letter-spacing: -0.9px;
+}
+
+.tempo {
+    color: #fafafa;
+    background-color: rgba(183, 81, 75, 255);
+    font-weight: bold;
+}
+
+.titulo {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgba(183, 81, 75, 255);
+    font-weight: 800;
+    font-style: italic;
+}

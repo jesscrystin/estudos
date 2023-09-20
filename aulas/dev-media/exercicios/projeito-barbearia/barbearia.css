@@ -1,0 +1,53 @@
+body {
+    color: #606060;
+    font-size: 16px;
+    font-family: 'Nunito';
+    background-color: #f1f1f1;
+}
+
+img {
+    width: 170px;
+}
+
+
+div {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 900;
+    border: 4px solid #606060;
+    margin: 3px 0;
+}
+
+h3 {
+    font-weight: 600;
+    border-top: 2px solid #606060;
+    border-bottom: 2px solid #606060;
+    padding: 5px 0;
+}
+
+p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+span {
+    font-weight: 900;
+    color: #606060;
+}
+
+a {
+    color: #fafafa;
+    text-decoration: none;
+    background-color: #25d366;
+    border-radius: 20px;
+    padding: 7px 7px;
+    border: 5px #25d366 ridge;
+}
+
+.rodape {
+    margin-bottom: 60vw;
+}
