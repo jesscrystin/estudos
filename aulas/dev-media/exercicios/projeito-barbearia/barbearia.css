@@ -9,7 +9,6 @@ img {
     width: 170px;
 }
 
-
 div {
     text-align: center;
     width: 600px;
@@ -48,6 +47,6 @@ a {
     border: 5px #25d366 ridge;
 }
 
-.rodape {
-    margin-bottom: 60vw;
+#rodape {
+    margin: 50px auto;
 }

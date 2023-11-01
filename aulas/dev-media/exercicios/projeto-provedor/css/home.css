@@ -197,6 +197,7 @@ body {
 #planos {
     width: 100%;
     max-width: 1024px;
+    min-width: 500px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -298,6 +299,7 @@ body {
 
 .rodape {
     width: 100%;
+
     text-align: center;
     margin: 0 auto;
 }
@@ -305,22 +307,27 @@ body {
 .rodape .logotipo {
     height: 150px;
     padding: 20px 0;
+}
+
+.rodape .logotipo .wrapper {
     position: relative;
-    left: 40px;
+    width: 350px;
+    height: 100%;
+    margin: auto;
 }
 
 .rodape .logotipo img {
     width: 90px;
     position: absolute;
-    left: 40.5%;
-    bottom: 20%;
+    left: 0;
+    bottom: 5%;
 }
 
-.rodape .logotipo div {
+.rodape .logotipo .texto {
     text-align: left;
     position: absolute;
-    left: 46%;
-    top: 36%;
+    left: 35%;
+    bottom: 15%;
 }
 
 .rodape .logotipo div h1 {
@@ -343,6 +350,8 @@ body {
 }
 
 .rodape .fundo-rodape {
+    box-sizing: border-box;
+    width: 100%;
     background-color: #f1f3f7;
     padding: 10px;
     font-weight: 600;
