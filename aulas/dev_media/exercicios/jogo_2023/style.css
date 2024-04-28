@@ -1,0 +1,57 @@
+body {
+    background-image: url("assets/fundo.jpg");
+    color: #fafafa;
+    margin: 0;
+}
+
+.secao-topo {
+    background-color: #0078f1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.secao-topo p {
+    font-size: 21px;
+    margin: 0;
+}
+
+.secao {
+    padding: 10px 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    width: 600px;
+}
+
+.secao .descricao {
+    line-height: 25px;
+    width: 600px;
+    margin: 10px auto 0;
+    font-weight: 100;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+.box-compra {
+    text-align: center;
+    border: 2px solid #fafafa;
+    margin: 15px auto;
+    width: 450px;
+    padding: 5px 20px 20px;
+    font-weight: 100;
+}
+
+a {
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}

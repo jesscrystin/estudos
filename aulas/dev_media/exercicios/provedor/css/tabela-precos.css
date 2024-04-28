@@ -1,0 +1,172 @@
+html,
+body {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.fundo-topo {
+    width: 100%;
+    height: 120px;
+    background-color: #2f86d6;
+
+}
+
+.logo {
+    margin: 0 530px;
+    position: relative;
+}
+
+.imagem {
+    width: 65px;
+    position: absolute;
+    top: 25px;
+}
+
+.logo .texto {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.cabecalho {
+    position: absolute;
+    right: 29%;
+    top: 45px;
+}
+
+.cabecalho a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+#planos {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+table {
+    text-align: center;
+    margin: 70px auto;
+}
+
+th {
+    background-color: #f1f3f7;
+    padding: 15px 40px;
+}
+
+.sem-cor {
+    background-color: #fff;
+}
+
+.letra-pequena {
+    font-size: 10px;
+    color: #a8a4a4;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+td {
+    box-shadow: 0.75px 0.75px #f1f3f7;
+}
+
+.primeira-coluna {
+    background-color: #f1f3f7;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.linha-impar,
+.linha-par {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bolinha-azul p {
+    width: 10px;
+    height: 10px;
+    color: #2f86d6;
+    background-color: #2f86d6;
+    border-radius: 100%;
+    margin: auto;
+}
+
+
+.rodape .logo-2 {
+    width: 100%;
+    height: 200px;
+    background-color: #2f86d6;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+
+}
+
+.imagem-2 {
+    width: 70px;
+    position: absolute;
+    top: 45px;
+    right: 940px;
+}
+
+.texto-2 {
+    text-align: left;
+    position: absolute;
+    top: 55px;
+    right: 795px;
+}
+
+.texto-2 h3 {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+}
+
+.texto-2 p {
+    margin: 0;
+    text-align: left;
+}
+
+.logo-2 .direitos {
+    position: absolute;
+    top: 120px;
+    right: 40%;
+}
+
+.fundo-rodape {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fundo-rodape span {
+    color: #2f86d6;
+
+}
