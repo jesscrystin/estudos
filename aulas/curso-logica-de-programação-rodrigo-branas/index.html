@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //janeiro
+        salarioJaneiro = 3000;
+        aluguelJaneiro = 1000;
+        contaAguaJaneiro = 200;
+        contaLuzJaneiro = 100;
+        internetJaneiro = 100;
+        trasporteJaneiro = 300;
+        lazerJaneiro = 300;
+        alimentacaoJaneiro = 500;
+        saldoJaneiro = salarioJaneiro - aluguelJaneiro - contaAguaJaneiro - contaLuzJaneiro - internetJaneiro - trasporteJaneiro - lazerJaneiro - alimentacaoJaneiro;
+        console.log('Janeiro');
+        console.log(saldoJaneiro);
+
+        EstaNegativoJaneiro = saldoJaneiro < 0;
+
+        if (EstaNegativoJaneiro) {
+            console.log('Em janeiro seu saldo está negativo');
+            jurosJaneiro = saldoJaneiro * 0.1;
+            console.log(jurosJaneiro);
+            saldoJaneiro += jurosJaneiro;
+        } else {
+            console.log('Em janeiro seu saldo está positivo');
+            rendimentosJaneiro = saldoJaneiro * 0.005;
+            console.log(rendimentosJaneiro);
+            saldoJaneiro += rendimentosJaneiro;
+        }
+
+        console.log(saldoJaneiro);
+
+        //favereiro
+        salarioFavereiro = 3000;
+        aluguelFavereiro = 1200;
+        contaAguaFavereiro = 250;
+        contaLuzFavereiro = 100;
+        internetFavereiro = 100;
+        trasporteFavereiro = 500;
+        lazerFavereiro = 0;
+        alimentacaoFavereiro = 1000;
+        saldoFevereiro = salarioFavereiro - aluguelFavereiro - contaAguaFavereiro - contaLuzFavereiro - internetFavereiro - trasporteFavereiro - lazerFavereiro - alimentacaoFavereiro;
+        console.log('Fevereiro');
+        console.log(saldoFevereiro);
+
+        EstaNegativoFevereiro = saldoFevereiro < 0;
+
+        if (EstaNegativoFevereiro) {
+            console.log('Em fevereiro seu saldo está negativo');
+            jurosFevereiro = saldoFevereiro * 0.1;
+            console.log(jurosFevereiro);
+            saldoFevereiro += jurosFevereiro;
+        } else {
+            console.log('Em fevereiro seu saldo está positivo');
+            rendimentosFevereiro = saldoFevereiro * 0.005;
+            console.log(rendimentosFevereiro);
+            saldoFevereiro += rendimentosFevereiro;
+        }
+        console.log(saldoFevereiro);
+
+        //como eu faço para calcular o acumulado do ano?
+        acumuladoAno = saldoJaneiro + saldoFevereiro;
+        console.log('Ano');
+        console.log(acumuladoAno);
+    </script>
+</body>
+
+</html>
