@@ -9,67 +9,101 @@
 
 <body>
     <script>
-        //janeiro
-        salarioJaneiro = 3000;
-        aluguelJaneiro = 1000;
-        contaAguaJaneiro = 200;
-        contaLuzJaneiro = 100;
-        internetJaneiro = 100;
-        trasporteJaneiro = 300;
-        lazerJaneiro = 300;
-        alimentacaoJaneiro = 500;
-        saldoJaneiro = salarioJaneiro - aluguelJaneiro - contaAguaJaneiro - contaLuzJaneiro - internetJaneiro - trasporteJaneiro - lazerJaneiro - alimentacaoJaneiro;
-        console.log('Janeiro');
-        console.log(saldoJaneiro);
-
-        EstaNegativoJaneiro = saldoJaneiro < 0;
-
-        if (EstaNegativoJaneiro) {
-            console.log('Em janeiro seu saldo está negativo');
-            jurosJaneiro = saldoJaneiro * 0.1;
-            console.log(jurosJaneiro);
-            saldoJaneiro += jurosJaneiro;
-        } else {
-            console.log('Em janeiro seu saldo está positivo');
-            rendimentosJaneiro = saldoJaneiro * 0.005;
-            console.log(rendimentosJaneiro);
-            saldoJaneiro += rendimentosJaneiro;
+        function arredondar(valor) {
+            return Math.round(valor * 100) / 100;
         }
 
-        console.log(saldoJaneiro);
-
-        //favereiro
-        salarioFavereiro = 3000;
-        aluguelFavereiro = 1200;
-        contaAguaFavereiro = 250;
-        contaLuzFavereiro = 100;
-        internetFavereiro = 100;
-        trasporteFavereiro = 500;
-        lazerFavereiro = 0;
-        alimentacaoFavereiro = 1000;
-        saldoFevereiro = salarioFavereiro - aluguelFavereiro - contaAguaFavereiro - contaLuzFavereiro - internetFavereiro - trasporteFavereiro - lazerFavereiro - alimentacaoFavereiro;
-        console.log('Fevereiro');
-        console.log(saldoFevereiro);
-
-        EstaNegativoFevereiro = saldoFevereiro < 0;
-
-        if (EstaNegativoFevereiro) {
-            console.log('Em fevereiro seu saldo está negativo');
-            jurosFevereiro = saldoFevereiro * 0.1;
-            console.log(jurosFevereiro);
-            saldoFevereiro += jurosFevereiro;
-        } else {
-            console.log('Em fevereiro seu saldo está positivo');
-            rendimentosFevereiro = saldoFevereiro * 0.005;
-            console.log(rendimentosFevereiro);
-            saldoFevereiro += rendimentosFevereiro;
+        function calcularJuros(valor) {
+            juros = arredondar(valor * 0.1);
+            return juros
         }
-        console.log(saldoFevereiro);
 
-        //como eu faço para calcular o acumulado do ano?
-        acumuladoAno = saldoJaneiro + saldoFevereiro;
-        console.log('Ano');
+        function calcularRendimentos(valor) {
+            rendimentos = arredondar(valor * 0.005);
+            return rendimentos
+        }
+
+        function calcularSaldo(mes, saldoInicial, lancamentos) {
+            console.log(mes);
+
+            saldo = saldoInicial
+
+            // para(for) cada item(lancamento) do(of) array/vetor(lancamentos)
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "receita") {
+                    saldo += lancamento.valor
+                } else {
+                    saldo -= lancamento.valor
+                }
+            }
+
+            if (saldo < 0) {
+                juros = calcularJuros(saldo);
+                saldo = arredondar(saldo + juros);
+            } else {
+                rendimentos = calcularRendimentos(saldo);
+                saldo = arredondar(saldo + rendimentos);
+            }
+            return saldo
+        }
+        // Percentual que cada despesa ocupa no orçamento??
+        saldoInicial = 0;
+        lancamentosJaneiro = [
+            { categoria: "Salário", tipo: "receita", "valor": 3000 },
+            { categoria: "Aluguel", tipo: "despesa", "valor": 1000 },
+            { categoria: "Conta de Luz", tipo: "despesa", "valor": 200 },
+            { categoria: "Conta de Água", tipo: "despesa", "valor": 100 },
+            { categoria: "Internet", tipo: "despesa", "valor": 100 },
+            { categoria: "Transporte", tipo: "despesa", "valor": 300 },
+            { categoria: "Lazer", tipo: "despesa", "valor": 300 },
+            { categoria: "Alimentação", tipo: "despesa", "valor": 500 },
+            { categoria: "Condomínio", tipo: "despesa", "valor": 300 },
+            { categoria: "Farmácia", tipo: "despesa", "valor": 100 }
+        ]
+        saldoJaneiro = calcularSaldo("Janeiro", saldoInicial, lancamentosJaneiro);
+        console.log(saldoJaneiro);
+        lancamentosFevereiro = [
+            { categoria: "Salário", tipo: "receita", "valor": 3000 },
+            { categoria: "Aluguel", tipo: "despesa", "valor": 1200 },
+            { categoria: "Conta de Luz", tipo: "despesa", "valor": 250 },
+            { categoria: "Conta de Água", tipo: "despesa", "valor": 100 },
+            { categoria: "Internet", tipo: "despesa", "valor": 100 },
+            { categoria: "Transporte", tipo: "despesa", "valor": 500 },
+            { categoria: "Alimentação", tipo: "despesa", "valor": 1000 },
+            { categoria: "Condomínio", tipo: "despesa", "valor": 400 }
+        ]
+        saldoFevereiro = calcularSaldo("Fevereiro", saldoJaneiro, lancamentosFevereiro);
+        console.log(saldoFevereiro);
+        lancamentosMarco = [
+            { categoria: "Salário", tipo: "receita", "valor": 4000, },
+            { categoria: "Aluguel", tipo: "despesa", "valor": 1200 },
+            { categoria: "Conta de Luz", tipo: "despesa", "valor": 200 },
+            { categoria: "Conta de Água", tipo: "despesa", "valor": 100 },
+            { categoria: "Internet", tipo: "despesa", "valor": 200 },
+            { categoria: "Transporte", tipo: "despesa", "valor": 500 },
+            { categoria: "Lazer", tipo: "despesa", "valor": 800 },
+            { categoria: "Alimentação", tipo: "despesa", "valor": 1000 },
+            { categoria: "Condomínio", tipo: "despesa", "valor": 400 }
+        ]
+        saldoMarco = calcularSaldo("Março", saldoFevereiro, lancamentosMarco);
+        console.log(saldoMarco);
+
+
+        acumuladoAno = saldoMarco;
+        console.log("Ano");
         console.log(acumuladoAno);
+
+        console.log("Quantidade de Lancamentos em Janeiro: ", lancamentosJaneiro.length);
+        lancamentosJaneiro.pop();
+        lancamentosJaneiro.pop();
+
+        lancamentosJaneiro.push({ categoria: "Financiamento", tipo: "despesa", valor: 200 });
+        console.log("Quantidade de Lancamentos em Janeiro: ", lancamentosJaneiro.length);
+
+        for (const lancamento of lancamentosJaneiro) {
+            console.log(lancamento.categoria, lancamento.valor);
+
+        }
     </script>
 </body>
 
