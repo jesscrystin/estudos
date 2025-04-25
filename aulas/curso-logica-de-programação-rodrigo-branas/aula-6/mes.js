@@ -36,6 +36,20 @@ class Mes {
     }
 
 
+    apurarJuros() {
+        if (this.totalizadorDoMes.saldo < 0) {
+            this.totalizadorDoMes.juros = this.calcularJuros(this.totalizadorDoMes.saldo);
+            this.totalizadorDoMes.saldo = arredondar(this.totalizadorDoMes.saldo + this.totalizadorDoMes.juros);
+        }
+    }
+
+    apurarRendimento() {
+        if (this.totalizadorDoMes.saldo < 0) {
+            this.totalizadorDoMes.rendimentos = this.calcularRendimentos(this.totalizadorDoMes.saldo);
+            this.totalizadorDoMes.saldo = arredondar(this.totalizadorDoMes.saldo + this.totalizadorDoMes.rendimentos);
+        }
+    }
+
     calcularSaldo() {
 
         this.totalizadorDoMes.saldo = this.saldoInicial;
@@ -52,15 +66,5 @@ class Mes {
         }
 
         this.totalizadorDoMes.distribuicaoDeDespesas = this.distribuirDespesas();
-
-        if (this.totalizadorDoMes.saldo < 0) {
-            this.totalizadorDoMes.juros = this.calcularJuros(this.totalizadorDoMes.saldo);
-            this.totalizadorDoMes.saldo = arredondar(this.totalizadorDoMes.saldo + this.totalizadorDoMes.juros);
-        }
-
-        if (this.totalizadorDoMes.saldo < 0) {
-            this.totalizadorDoMes.rendimentos = this.calcularRendimentos(this.totalizadorDoMes.saldo);
-            this.totalizadorDoMes.saldo = arredondar(this.totalizadorDoMes.saldo + this.totalizadorDoMes.rendimentos);
-        }
     }
 }
