@@ -46,11 +46,24 @@
             return rendimentos
         }
 
+        function distribuirDespesas(lancamentos, total) {
+            distribuicaoDeDespesas = []
+            for (lancamento of lancamentos) {
+                if (lancamento.tipo === "despesa") {
+                    percentual = arredondar((lancamento.valor / total) * 100);
+                    distribuicaoDeDespesas.push({ categoria: lancamento.categoria, percentual })
+                }
+            }
+
+            return distribuicaoDeDespesas
+        }
+
         function calcularSaldo(mes, saldoInicial, lancamentos) {
+
             console.log(mes);
 
             totalizadorDoMes = {
-                saldo: 0, juros: 0, saldoInicial, rendimentos: 0, receitas: 0, despesas: 0
+                saldo: 0, juros: 0, saldoInicial, rendimentos: 0, receitas: 0, despesas: 0, distribuicaoDeDespesas: []
             }
 
             totalizadorDoMes.saldo = saldoInicial
@@ -66,6 +79,8 @@
                 }
             }
 
+            totalizadorDoMes.distribuicaoDeDespesas = distribuirDespesas(lancamentos, totalizadorDoMes.despesas);
+
             if (totalizadorDoMes.saldo < 0) {
                 totalizadorDoMes.juros = calcularJuros(totalizadorDoMes.saldo);
                 totalizadorDoMes.saldo = arredondar(totalizadorDoMes.saldo + totalizadorDoMes.juros);
@@ -75,6 +90,7 @@
             }
             return totalizadorDoMes
         }
+
         // Percentual que cada despesa ocupa no orçamento??
         saldoInicial = 0;
         lancamentosJaneiro = [
@@ -91,6 +107,7 @@
         ]
         totalizadorDoMesJaneiro = calcularSaldo("Janeiro", saldoInicial, lancamentosJaneiro);
         console.log(totalizadorDoMesJaneiro);
+
         lancamentosFevereiro = [
             new Lancamento("Salário", "receita", 3000),
             new Lancamento("Aluguel", "despesa", 1200),
@@ -103,6 +120,7 @@
         ]
         totalizadorDoMesFeveireiro = calcularSaldo("Fevereiro", totalizadorDoMesJaneiro.saldo, lancamentosFevereiro);
         console.log(totalizadorDoMesFeveireiro);
+
         lancamentosMarco = [
             new Lancamento("Salário", "receita", 4000),
             new Lancamento("Aluguel", "despesa", 1200),
